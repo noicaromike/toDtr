@@ -1,0 +1,170 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ebf1eb, #45a049);
+    /* Green gradient */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.center-container {
+    text-align: center;
+}
+
+.container {
+    max-width: 27%;
+    padding: 2%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+h2 {
+    color: #333;
+    margin-top: -20px;
+}
+
+form {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+select,
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.submit:hover {
+    background-color: #45a049;
+}
+
+.toggle {
+    width: 100%;
+    padding: 12px;
+    background-color: #2d81ff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.toggle:hover {
+    background-color: #2155ff;
+}
+
+#timeFormatText {
+    padding-top: 10px;
+    display: table;
+    margin: 0 auto;
+}
+
+#timeFormatText.toggle-animation {
+    animation: fadeInOut 1s ease-in-out;
+    /* Add animation */
+}
+
+@keyframes fadeInOut {
+
+    0% {
+        opacity: 0;
+        /* Start and end state: fully transparent */
+    }
+
+    100% {
+        opacity: 1;
+        /* Middle state: fully visible */
+    }
+}
+
+footer p {
+    margin-top: 30px;
+    margin-bottom: -10px;
+}
+
+.image {
+    max-width: 25%;
+    max-height: 25%;
+}
+
+#aboutLink {
+    cursor: pointer;
+    display: inline-block;
+}
+.addRecord {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    
+}
+
+/* card to  need to design*/
+.addRecord-container{
+    width: 100%;
+    max-width: 425px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 2rem;   
+}
+
+
+
+#popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    cursor: auto;
+    /* Change cursor style */
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    /* Add transition */
+}
+
+#popupClose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    /* Change cursor style */
+}
